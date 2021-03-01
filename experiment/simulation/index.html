@@ -1,13 +1,217 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+            #img {
+            margin:200px auto auto auto;
+            height: 501px;
+            width: 501px;
+            border: 1px solid red;
+            background-image: url("images/demo1.jpg");
+            background-repeat: no-repeat;
+            //float: inherit;
+            vertical-align: middle;
+            position: center;
+            align-content:center;
+            align-items:center;
+            }
+
+            #left{
+            //border: 1px solid #aaaaaa;
+            vertical-align:top;
+            width:49%;
+            height:99%;
+            float:left;
+            display:inline-table;
+            }
+
+            #right{
+            //border: 1px solid #aaaaaa;
+            vertical-align:top;
+            width:49%;
+            height:99%;
+            float:right;
+            display:inline-table;
+            }
+
+            #box1{
+            //padding: 5px 5px 5px 5px;   
+            margin:50px auto auto auto;
+            border: 1px solid #aaaaaa;
+            width:87px;
+            height:22px;
+            position: relative;
+            align-content:center;
+            }
+
+            #box2{
+            //padding: 5px 5px 5px 5px;
+            margin:50px auto auto auto;
+            border: 1px solid #aaaaaa;
+            width:87px;
+            height:22px;
+            align-content:center;
+            position: relative;
+            }
+
+            #div1 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid #aaaaaa;
+            margin-left: 35px;
+            margin-top: 40px;
+            float: left;
+            position: static;
+            }
+
+            #div2 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid #aaaaaa;
+            margin-left: 33px;
+            margin-top: 15px;
+            float: left;
+            position: static;
+            }
+
+            #div3 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid #aaaaaa;
+            margin-left: 18px;
+            margin-top: 15px;
+            float: left;
+            position: static;
+            }
+
+            #div4 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid #aaaaaa;
+            margin-left: 36px;
+            margin-top: 43px;
+            float: left;
+            position: static;
+            }
+
+            #div5 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid #aaaaaa;
+            margin-left: 60px;
+            margin-top: 50px;
+            float: left;
+            position: static;
+            }
+
+            #div6 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid #aaaaaa;
+            margin-left: 33px;
+            margin-top: 40px;
+            float: left;
+            position: static;
+            }
+
+            #div7 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid #aaaaaa;
+            margin-left: 18px;
+            margin-top: 55px;
+            float: left;
+            position: static;
+            }
+
+            #div8 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid #aaaaaa;
+            margin-left: 20px;
+            margin-top: 78px;
+            float: left;
+            position: static;
+            }
+
+            a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            position: absolute;
+            margin-left:-40px;
+            margin-top:400px;
+            }
+
+            a:hover, a:active {
+            background-color: red;
+            }
+
+            body {
+            height: 100%;
+            background-color: #0026ff;
+            }
+    </style>
+
+    <script>
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
+
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}
+    </script>
 </head>
 <body>
-		<!-- Your code goes here-->
-
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+    <div id="img" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="left" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="box1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag1" src="images/a.png" draggable="true" ondragstart="drag(event)">
+                <img id="drag2" src="images/b.png" draggable="true" ondragstart="drag(event)">
+                <img id="drag3" src="images/c.png" draggable="true" ondragstart="drag(event)">
+                <img id="drag4" src="images/d.png" draggable="true" ondragstart="drag(event)">
+            </div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+        <div id="right" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="box2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag5" src="images/a.png" draggable="true" ondragstart="drag(event)">
+                <img id="drag6" src="images/b.png" draggable="true" ondragstart="drag(event)">
+                <img id="drag7" src="images/c.png" draggable="true" ondragstart="drag(event)">
+                <img id="drag8" src="images/d.png" draggable="true" ondragstart="drag(event)">
+            </div>
+            <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+        <!--<div id="left">
+            <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div31" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div id="right">
+            
+        </div>-->
+        <a href="index1.html">NEXT</a>
+    </div>
 </body>
 </html>
