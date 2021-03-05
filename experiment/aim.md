@@ -1,1 +1,1 @@
-### Aim of the experiment
+### Obtain the main line formula
