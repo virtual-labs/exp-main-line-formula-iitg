@@ -137,65 +137,7 @@
             },
             correctAnswer: "c" ///// Write the correct option inside double quotes
         },
-        {	
-         question: "5. How many astronomical divisions are there in a palm?", ///// Write the question inside double quotes
-            answers: {
-                a: "9", ///// Write the option 1 inside double quotes
-                b: "5", ///// Write the option 2 inside double quotes
-                c: "4",
-                d: "2",
-            },
-            correctAnswer: "c" ///// Write the correct option inside double quotes
-        },
-       {	
-         question: "6. How many elevations are there in a palmar surface?", ///// Write the question inside double quotes
-            answers: {
-                a: "8", ///// Write the option 1 inside double quotes
-                b: "6", ///// Write the option 2 inside double quotes
-                c: "4",
-                d: "2",
-            },
-            correctAnswer: "b" ///// Write the correct option inside double quotes
-        },
-        {	
-         question: "7. The triradius designated by the letter ‘t’ is", ///// Write the question inside double quotes
-            answers: {
-                a: "Arial triradius", ///// Write the option 1 inside double quotes
-                b: "Axial Triradius", ///// Write the option 2 inside double quotes
-                c: "Proximal Triradius",
-                d: "Digital Triradius",
-            },
-            correctAnswer: "b" ///// Write the correct option inside double quotes
-        },
-        {	
-         question: "8. The periphery of the palm is divided into how many intervals and points", ///// Write the question inside double quotes
-            answers: {
-                a: "20", ///// Write the option 1 inside double quotes
-                b: "30", ///// Write the option 2 inside double quotes
-                c: "14",
-                d: "15",
-            },
-            correctAnswer: "c" ///// Write the correct option inside double quotes
-       },
-	    	{	
-         question: "9. The main line formula is", ///// Write the question inside double quotes
-            answers: {
-                a: "DCBA", ///// Write the option 1 inside double quotes
-                b: "ABCD", ///// Write the option 2 inside double quotes
-                c: "BCDA",
-                d: "CDAB",
-            },
-            correctAnswer: "a" ///// Write the correct option inside double quotes
-        },
-      		{	
-         question: "10. There are how many main lines in a palm", ///// Write the question inside double quotes
-            answers: {
-                a: "6", ///// Write the option 1 inside double quotes
-                b: "3", ///// Write the option 2 inside double quotes
-                c: "2",
-                d: "1",
-            },
-            correctAnswer: "a" ///// Write the correct option inside double quotes
+        
         }
      ];
 
