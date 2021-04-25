@@ -1,0 +1,37 @@
+[{
+	"question": "1.What are the interdigital intervals ?",
+	"answers": {
+		"a": "The clefts between the digits",
+		"b": "The clefts between the ulnar",
+		"c": "The clefts between the distal",
+		"d": "None of above"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "2. What is hypothenar eminence?",
+	"answers": {
+		"a": "Lying on the proximal direction there is an elongated eminence",
+		"b": "Lying on the ulnar direction there is an elongated eminence",
+		"c": "Lying on the direction there is an elongated eminence",
+		"d": "It is fifth triradius"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "3. How many astronomical divisions are there in a palm?",
+	"answers": {
+		"a": "9",
+		"b": "5",
+		"c": "4",
+		"d": "2"
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "4. How many elevations are there in a palmar surface?",
+	"answers": {
+		"a": "8",
+		"b": "6",
+		"c": "4",
+		"d": "2"
+	},
+	"correctAnswer": "c"
+}]

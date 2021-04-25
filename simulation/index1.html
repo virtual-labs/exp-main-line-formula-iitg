@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+            #img {
+            margin:200px auto auto auto;
+            height: 501px;
+            width: 501px;
+            border: 1px solid red;
+            background-image: url("images/demo1.jpg");
+            background-repeat: no-repeat;
+            //float: inherit;
+            vertical-align: middle;
+            position: center;
+            align-content:center;
+            align-items:center;
+            }
+
+            #img1{
+            z-index:10;
+            }
+
+            #img2{
+            z-index:10;
+            }
+
+            #left{
+            //border: 1px solid #aaaaaa;
+            vertical-align:top;
+            width:49%;
+            height:70%;
+            float:left;
+            display:inline-table;
+            }
+
+            #right{
+            //border: 1px solid #aaaaaa;
+            vertical-align:top;
+            width:49%;
+            height:70%;
+            float:right;
+            display:inline-table;
+            }
+
+            #box1{
+            padding: 5px 5px 5px 5px;   
+            margin:76px 7px auto auto;
+            //border: 1px solid #aaaaaa;
+            width:213px;
+            height:253px;
+            position: relative;
+            align-content:center;
+            }
+
+            #box2{
+            padding: 5px 5px 5px 5px;
+            margin:76px 13px auto auto;
+            //border: 1px solid #aaaaaa;
+            width:213px;
+            height:253px;
+            align-content:center;
+            position: relative;
+            }
+
+            #div1 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid red;
+            margin-left: 20px;
+            margin-top: -220px;
+            float: left;
+            position: absolute;
+            }
+
+            #div2 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid red;
+            margin-left: 70px;
+            margin-top: -245px;
+            float: left;
+            position: absolute;
+            }
+
+            #div3 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid red;
+            margin-left: 112px;
+            margin-top: -248px;
+            float: left;
+            position: absolute;
+            }
+
+            #div4 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid red;
+            margin-left: 165px;
+            margin-top: -235px;
+            float: left;
+            position: absolute;
+            }
+
+            #div5 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid red;
+            margin-left: 45px;
+            margin-top: -215px;
+            float: left;
+            position: absolute;
+            }
+
+            #div6 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid red;
+            margin-left: 95px;
+            margin-top: -225px;
+            float: left;
+            position: absolute;
+            }
+
+            #div7 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid red;
+            margin-left: 134px;
+            margin-top: -215px;
+            float: left;
+            position: absolute;
+            }
+
+            #div8 {
+            width: 18px;
+            height: 18px;
+            //border: 1px solid red;
+            margin-left: 173px;
+            margin-top: -190px;
+            float: left;
+            position: absolute;
+            }
+
+            #below{
+            padding:10px 0px 5px 2px;
+            //border: 1px solid red;
+            float: left;
+            margin-left:10px;
+            position: relative;
+            height:24%;
+            width:99%;
+            color:white;
+            }
+
+            #ip, #ip1, #ip2,#ip3,#ip4,#ip5,#ip6,#ip7{
+            margin-left:5px;
+            margin-top:0px;
+            height:30px;
+            width:30px;
+            }
+
+            #but{
+            margin-left:5px;
+            margin-top:0px;
+            height:30px;
+            width:100px;
+            }
+
+            body {
+            height: 100%;
+            background-color: #0026ff;
+            }
+    </style>
+
+    <script>
+
+    function check(){
+       var a=document.getElementById("ip").value;
+       var b=document.getElementById("ip1").value;
+       var c= document.getElementById("ip2").value;
+       var d= document.getElementById("ip3").value;
+       var e= document.getElementById("ip4").value;
+       var f= document.getElementById("ip5").value;
+       var g= document.getElementById("ip6").value;
+       var h= document.getElementById("ip7").value;
+
+       
+
+       if((a==11) && (b==7) && (c==7) && (d==5)){
+        if((e==11) && (f==7) && (g==7) && (h==5))
+        {     
+          alert("Correct");
+        }
+       }
+       else
+       {
+        alert("Enter the values correctly");
+       }
+    }
+
+    </script>
+</head>
+<body>
+    <div id="img">
+        <div id="left">
+            <div id="box1" class="img1"> <img src="images/part 2 one main.jpg" id="img1">
+                <div id="div1" onclick="document.getElementById('img1').src = 'images/part 2 one d.jpg'"></div>
+                <div id="div2" onclick="document.getElementById('img1').src = 'images/part 2 one c.jpg'"></div>
+                <div id="div3" onclick="document.getElementById('img1').src = 'images/part 2 one b.jpg'"></div>
+                <div id="div4" onclick="document.getElementById('img1').src = 'images/part 2 one a.jpg'"></div>
+            </div>
+            </div>
+        <div id="right"> 
+            <div id="box2"  class="img2"> <img src="images/part 2 two main.jpg" id="img2"/>
+                <div id="div5" onclick="document.getElementById('img2').src = 'images/part 2 two a.jpg'"></div>
+                <div id="div6" onclick="document.getElementById('img2').src = 'images/part 2 two b.jpg'"></div>
+                <div id="div7" onclick="document.getElementById('img2').src = 'images/part 2 two c.jpg'"></div>
+                <div id="div8" onclick="document.getElementById('img2').src = 'images/part 2 two d.jpg'"></div>
+            </div>
+            </div>
+        
+        <div id="below">
+        MAIN LINE FORMULA:<br>TYPE INTO THE BOXES AND CLICK SUBMIT:<br>
+        <table align="center" align-items="center">
+            <tr>
+                <th> D </th> 
+                <th> C </th>
+                <th> B </th>
+                <th> A </th>
+                <th>&nbsp;&nbsp;</th>
+                <th> D </th>
+                <th> C </th>
+                <th> B </th>
+                <th> A </th>
+            </tr>
+            <tr>
+                <td><input type="text" id="ip" />
+                </td>
+                <td><input type="text" id="ip1" />
+                </td>
+                <td><input type="text" id="ip2" />
+                </td>
+                <td><input type="text" id="ip3" />
+                </td>
+                <td>&nbsp;&nbsp;</td>
+                <td><input type="text" id="ip4" />
+                </td>
+                <td><input type="text" id="ip5" />
+                </td>
+                <td><input type="text" id="ip6" />
+                </td>
+                <td><input type="text" id="ip7" />
+                </td>
+                <td><input type="submit" value="SUBMIT" id="but" onclick="check();" /></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center">Left</td> 
+                <td colspan="5" align="center">Right</td>
+            </tr>
+        </table>
+        </div>
+       </div>
+</body>
+</html>
